@@ -610,7 +610,7 @@ class ControllerPaymentCielo extends Controller {
 
 
     public function captura() {
-        $this->load->library('cielo');
+        require_once DIR_SYSTEM . 'library/cielo.php';
 
         $this->load->language('payment/cielo');
 
